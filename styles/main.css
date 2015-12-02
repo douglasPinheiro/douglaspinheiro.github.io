@@ -136,7 +136,7 @@ ul#nav li > button {
 }
 
 .ability-content {
-  display: -webkit-inline-box;
+  display: flex;
   padding-bottom: 4px;
 }
 
