@@ -13,7 +13,10 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: 'Quicksand', sans-serif;
+}
+
+body, div {
+    font-family: Quicksand, sans-serif;
 }
 
 hr {
@@ -46,7 +49,7 @@ hr {
 #block_1_title {
     position: absolute;
     top: 25%;
-    left: 40%;
+    left: 43%;
     font-size: 30px;
     color: black;
 }
@@ -116,6 +119,10 @@ ul#nav li > button {
 
 .label-progress-bar {
   text-align: initial;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-left: 6px;
 }
 
 #hire {
@@ -126,4 +133,14 @@ ul#nav li > button {
 #hire:hover {
     box-shadow: 0 0 0 2px #fff inset!important;
     color: #fff;
+}
+
+.ability-content {
+  display: -webkit-inline-box;
+  padding-bottom: 4px;
+}
+
+.logo {
+    width: 27px;
+    height: 27px;
 }
