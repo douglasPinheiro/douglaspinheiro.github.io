@@ -5,7 +5,7 @@ html {
   overflow: hidden;
 }
 
-body {
+html, body {
   margin:0;
   padding:0;
   perspective: 1px;
@@ -15,8 +15,12 @@ body {
   overflow-x: hidden;
 }
 
-body, div, #hire {
+body, div, ul, #hire {
     font-family: Quicksand, sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 hr {
@@ -38,6 +42,18 @@ hr {
 
 .block, .block:before {
   background: 50% 50% / cover;
+}
+
+#scrollDown {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  cursor: pointer;
+}
+
+#scrollDown > i {
+  font-size: 30px;
+  color: black;
 }
 
 #block_1 {
@@ -147,10 +163,6 @@ ul#nav li > button {
 
 .column.certifications {
   text-align: center;
-}
-
-.certifications-list {
-  list-style-type: none;
 }
 
 .certifications-list > li {

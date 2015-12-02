@@ -7,4 +7,11 @@ $(function() {
 	$('#progressDotNet').progress({value:95, total:100});
 	$('#progressRoR').progress({value:60, total:100});
 	$('#progressScrum').progress({value:95, total:100});
+
+	$('.scroll').on('click', function(event) {
+        $('html, body').animate({
+            scrollTop: $("#resume").offset().top
+        }, 1500);
+        return false;
+	});
 });
