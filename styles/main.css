@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+hr {
+    width: 70%;
+    margin: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block {
+  position: relative;
+  padding: 12vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+}
+
+.block, .block:before {
+  background: 50% 50% / cover;
+}
+
+#block_1 {
+  background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-15.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#block_2 {
+  background-color: white;
+  min-height: 120vh;
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.content {
+    text-align: center;
+    font-size: 16;
+}
+
+.content > p {
+  margin-bottom: 8px;
+}
+
+.abilities {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    display: block;
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#nav {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+ul#nav li {
+    width:25%;
+    text-align:center;
+    position: relative;
+    list-style: none;
+    line-height: 48px;
+    display: inline-block;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ul#nav li > button {
+    margin-top: 6px;
+}
+
+.label-progress-bar {
+  text-align: initial;
+}
