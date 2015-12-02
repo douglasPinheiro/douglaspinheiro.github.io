@@ -144,3 +144,21 @@ ul#nav li > button {
     width: 27px;
     height: 27px;
 }
+
+.column.certifications {
+  text-align: center;
+}
+
+.certifications-list {
+  list-style-type: none;
+}
+
+.certifications-list > li {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.certifications-list > li > a {
+    color: black;
+}
