@@ -38,9 +38,17 @@ hr {
 }
 
 #block_1 {
-  background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/code-wallpaper-15.jpg");
+  background-image: url("../images/background.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
+}
+
+#block_1_title {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 30px;
+    color: black;
 }
 
 #block_2 {
@@ -97,7 +105,7 @@ ul#nav li {
     list-style: none;
     line-height: 48px;
     display: inline-block;
-    color: white;
+    color: black;
     margin-right: auto;
     margin-left: auto;
 }
@@ -108,4 +116,14 @@ ul#nav li > button {
 
 .label-progress-bar {
   text-align: initial;
+}
+
+#hire {
+    box-shadow: 0 0 0 2px #000 inset!important;
+    color: #000;
+}
+
+#hire:hover {
+    box-shadow: 0 0 0 2px #fff inset!important;
+    color: #fff;
 }
