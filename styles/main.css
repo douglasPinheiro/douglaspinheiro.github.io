@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-body, div {
+body, div, #hire {
     font-family: Quicksand, sans-serif;
 }
 
