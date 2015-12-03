@@ -9,7 +9,7 @@ $(function() {
 	$('#progressScrum').progress({value:95, total:100});
 
 	$('.scroll').on('click', function(event) {
-        $('html, body').animate({
+        $('.parallax').animate({
             scrollTop: $("#resume").offset().top
         }, 1500);
         return false;

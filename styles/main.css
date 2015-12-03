@@ -5,7 +5,7 @@ html {
   overflow: hidden;
 }
 
-html, body {
+.parallax {
   margin:0;
   padding:0;
   perspective: 1px;
@@ -15,7 +15,7 @@ html, body {
   overflow-x: hidden;
 }
 
-body, div, ul, #hire {
+.parallax, div, ul, #hire {
     font-family: Quicksand, sans-serif;
 }
 
