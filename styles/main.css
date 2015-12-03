@@ -46,9 +46,48 @@ hr {
 
 #scrollDown {
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 50%;
   cursor: pointer;
+  -webkit-animation-name: moving; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 0.8s; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: moving; /* Chrome, Safari, Opera */
+  animation-name: moving;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+
+
+
+/* Animation */
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moving {
+    0%   {top: 92%;}
+    10%  {top: 91.8%;}
+    20%  {top: 91.6%;}
+    30%  {top: 91.4%;}
+    40%  {top: 91.2%;}
+    50%  {top: 91%;}
+    60%  {top: 91.2%;}
+    70%  {top: 91.4%;}
+    80%  {top: 91.6%;}
+    90%  {top: 91.8%;}
+    100% {top: 92%;}
+}
+
+/* Standard syntax */
+@keyframes moving {
+    0%   {top: 92%;}
+    10%  {top: 91.8%;}
+    20%  {top: 91.6%;}
+    30%  {top: 91.4%;}
+    40%  {top: 91.2%;}
+    50%  {top: 91%;}
+    60%  {top: 91.2%;}
+    70%  {top: 91.4%;}
+    80%  {top: 91.6%;}
+    90%  {top: 91.8%;}
+    100% {top: 92%;}
 }
 
 #scrollDown > i {
