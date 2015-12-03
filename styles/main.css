@@ -51,7 +51,7 @@ hr {
   cursor: pointer;
   -webkit-animation-name: moving; /* Chrome, Safari, Opera */
   -webkit-animation-duration: 0.8s; /* Chrome, Safari, Opera */
-  -webkit-animation-iteration-count: moving; /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
   animation-name: moving;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
