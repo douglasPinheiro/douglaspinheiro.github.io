@@ -162,12 +162,9 @@ ul#nav li {
     line-height: 48px;
     display: inline-block;
     color: black;
-    margin-right: auto;
     margin-left: auto;
-}
-
-ul#nav li > button {
-    margin-top: 6px;
+    margin-right: 30px;
+    text-align: right;
 }
 
 .label-progress-bar {
@@ -176,16 +173,6 @@ ul#nav li > button {
   font-size: 18px;
   padding-top: 3px;
   padding-left: 6px;
-}
-
-#hire {
-    box-shadow: 0 0 0 2px #000 inset!important;
-    color: #000;
-}
-
-#hire:hover {
-    box-shadow: 0 0 0 2px #fff inset!important;
-    color: #fff;
 }
 
 .ability-content {
