@@ -99,14 +99,6 @@ hr {
   z-index:-1;
 }
 
-#block_1_title {
-    position: absolute;
-    top: 25%;
-    left: 43%;
-    font-size: 30px;
-    color: black;
-}
-
 #block_2 {
   background-color: white;
   min-height: 120vh;
