@@ -90,11 +90,11 @@ hr {
 
 #scrollDown > i {
   font-size: 40px;
-  color: black;
+  color: white;
 }
 
 #block_1 {
-  background-image: url("https://scontent-mia1-1.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/1011120_507375439382088_2081198271_n.jpg?oh=3be1f7063b48c74eae3ae3ef11329791&oe=56ED2081");
+  background-image: url("../images/background.jpg");
   transform: translateZ(-1px) scale(2);
   z-index:-1;
 }
