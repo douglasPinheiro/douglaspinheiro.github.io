@@ -190,3 +190,17 @@ ul#nav li {
 .certifications-list > li > a {
     color: black;
 }
+
+.education {
+  text-align: center;
+}
+
+.education img {
+  width: 300px;
+  height: 180px;
+}
+
+.education > .row > .column > .column {
+  text-align: justify;
+  font-size: 14px;
+}
