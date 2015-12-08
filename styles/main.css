@@ -204,3 +204,46 @@ ul#nav li {
   text-align: justify;
   font-size: 14px;
 }
+
+.portfolio {
+  font-size: 16px;
+}
+
+.project-image-content {
+  width: 312px;
+  height: 200;
+  padding-top: 80px;
+  cursor: pointer;
+}
+
+.project-image-content > img {
+  width: 100%;
+  height: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.column:hover > a > .project-image-content > img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.project-image-content.sinc {
+  padding-top: 0px;
+}
+
+.project-image-content.sinc > img {
+  height: 100%;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.portfolio > .column:nth-child(2) {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
