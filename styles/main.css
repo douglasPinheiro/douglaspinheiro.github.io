@@ -215,7 +215,7 @@ ul#nav li {
 }
 
 .project-image-content {
-  width: 312px;
+  width: 100%;
   height: 200;
   padding-top: 80px;
   cursor: pointer;
