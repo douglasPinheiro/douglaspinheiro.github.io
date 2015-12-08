@@ -8,9 +8,16 @@ $(function() {
 	$('#progressRoR').progress({value:60, total:100});
 	$('#progressScrum').progress({value:95, total:100});
 
-	$('.scroll').on('click', function(event) {
+	$('#scrollDown').on('click', function(event) {
         $('.parallax').animate({
             scrollTop: $("#resume").offset().top
+        }, 1500);
+        return false;
+	});
+
+	$('#hire').on('click', function(event) {
+        $('.parallax').animate({
+            scrollTop: $("#contact").offset().top
         }, 1500);
         return false;
 	});
