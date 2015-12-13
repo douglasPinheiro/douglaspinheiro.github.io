@@ -229,6 +229,13 @@ ul#nav li {
 }
 
 .column:hover > a > .project-image-content > img {
+  
+  -webkit-transition: -webkit-filter 1000ms linear;
+  -moz-transition: -webkit-filter 1000ms linear;
+  -o-transition: -webkit-filter 1000ms linear;
+  -ms-transition: -webkit-filter 1000ms linear;
+  transition: -webkit-filter 1000ms linear;
+
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
