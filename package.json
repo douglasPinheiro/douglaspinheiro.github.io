@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/douglasPinheiro/douglaspinheiro.github.io/issues"
   },
-  "homepage": "https://github.com/douglasPinheiro/douglaspinheiro.github.io#readme"
+  "homepage": "https://github.com/douglasPinheiro/douglaspinheiro.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
