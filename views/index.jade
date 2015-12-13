@@ -1,0 +1,207 @@
+doctype html
+html
+  head
+    title Douglas da Costa Pinheiro
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='styles/css/main.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.3/semantic.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js')
+    script(type='text/javascript', src='scripts/main.js')
+  body
+    a.cd-top(href='#0') To
+    .parallax
+      header#block_1.block
+        nav
+          ul#nav
+            li
+              button#hire.ui.inverted.black.active.button Contato
+        #scrollDown
+          i.fa.fa-chevron-down
+      main#block_2.block
+        section.ui.one.column.grid
+          .row
+            #resume.column.title Resumo
+          .row
+            .column.content
+              p Olá, meu nome é Douglas da Costa Pinheiro.
+              p Sou desenvolvedor web, apaixonado por testes de software
+              p e metodologias ágeis (Scrum é minha preferida).
+              p Trabalho com o desenvolvimento Web há mais ou menos 2 anos,
+              p mas não se engane, embora não faça muito tempo, eu já aprendi muito.
+        hr
+        section.ui.one.column.grid
+          .row
+            .column.title Habilidades
+          .row
+            .column.abilities
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-html5.png')
+                  .label-progress-bar HTML 5
+                #progressHtml.ui.blue.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-css3.png')
+                  .label-progress-bar CSS 3
+                #progressCss.ui.orange.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-js.png')
+                  .label-progress-bar JavaScript
+                #progressJS.ui.blue.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-jquery.jpg')
+                  .label-progress-bar Jquery
+                #progressJquery.ui.yellow.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-angular.png')
+                  .label-progress-bar AngularJS
+                #progressAngular.ui.orange.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/nodejs.png')
+                  .label-progress-bar Node JS
+                #progressNode.ui.orange.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-net.png')
+                  .label-progress-bar .NET
+                #progressDotNet.ui.green.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-ruby.png')
+                  .label-progress-bar Ruby on Rails
+                #progressRoR.ui.red.progress
+                  .bar
+                    .progress
+              .progress-container
+                .ability-content
+                  img.logo(src='images/logo-scrum.png')
+                  .label-progress-bar Scrum
+                #progressScrum.ui.green.progress
+                  .bar
+                    .progress
+        hr
+        section.ui.one.column.grid
+          .row
+            #certificates.column.title Certificados
+          .row
+            .column.certifications
+              img(src='images/mcp.png')
+          .row
+            .column.certifications
+              ul.certifications-list
+                li
+                  a(href='https://www.microsoft.com/en-us/learning/exam-70-480.aspx') Exame 70-480 - Programming in HTML5 with JavaScript and CSS3
+                li
+                  a(href='https://www.microsoft.com/en-us/learning/exam-70-486.aspx') Exame 70-486 - Developing ASP.NET MVC Web Applications
+        hr
+        section.education
+          .ui.one.column.grid
+            .row
+              #education.column.title Escolaridade
+          .ui.grid
+            .six.wide.column
+              img(src='images/logo-etec.jpg')
+            .ten.wide.column
+              p(style='font-weight: 700 !important; font-size: 18px;') Técnico em informática na ETEC de Mauá
+              p(style='font-weight: 700 !important; font-size: 18px;')  Concluido, Data: 12/2013
+              p
+                | O curso técnico da ETEC foi onde eu tive meu primeiro contato com programação e, desde então, não parei de programar, sempre aprimorando minhas habilidades.
+          .ui.grid
+            .six.wide.column
+              img(src='images/logo-estacio.jpg')
+            .ten.wide.column
+              p(style='font-weight: 700 !important; font-size: 18px;') Graduação em Analise e desenvolvimento de sistemas
+              p(style='font-weight: 700 !important; font-size: 18px;') Cursando, Termino previsto: 12/2016
+              p
+                | Na faculdade de Análise e Desenvolvimento de Sistemas, eu obtive uma visão muito mais ampla sobre os processos de criação e manutenção de softwares e sobre as ferramentas utilizadas nos mesmos.
+        hr
+        section
+          .ui.one.column.grid
+            .row
+              #portfolio.column.title Portifólio
+          .ui.three.column.grid.portfolio
+            .column
+              a(href='https://www.maislojasabc.com.br/')
+                .project-image-content
+                  img(src='images/maislojas-abc.png')
+              p.project-title E-commerce
+              p
+                | O MaisLojasABC é um E-Commerce, no qual se encontram centenas de lojas, dos mais variados ramos dentro do comércio.
+                | Neste projeto eu trabalhei com testes automatizados, back-end e até um pouco de front-end. Foi o primeiro projeto no qual eu trabalhei como desenvolvedor, e já me agregou muito conhecimento.
+            .column
+              a(href='http://www.sincomercioabc.com.br/')
+                .project-image-content.sinc
+                  img(src='images/sincomercio.png')
+              p.project-title ERP
+              p
+                | O SincomercioABC desenvolveu um ERP. Eu participei do inicio até praticamente o fim deste projeto.
+                | Por ser um ERP, o projeto lida com um certo grau de complexidade, porém conseguimos lidar bem com isso, mantendo uma boa suíte de testes e um bom processo de desenvolvimento.
+            .column
+              a(href='http://geosiga.com.br/')
+                .project-image-content
+                  img(src='images/geosiga.png')
+              p.project-title Geoposicionamento
+              p
+                | Na Geosiga eu participei de vários projetos, fiz incrementos no site, ajudei no desenvolvimento do sistema que cuida do back-office da empresa e trabalhei bastante no desenvolvimento de softwares que faziam o gerenciamento de dados de geolocalização, integrado com o google maps.
+        hr
+        section.contact
+          .ui.one.column.grid
+            .row
+              #contact.column.title Contato
+          .ui.grid.text-center
+            .four.wide.column.text-right
+              .bold Nome: 
+            .four.wide.column.text-left
+              div Douglas da Costa Pinheiro
+          .ui.grid.text-center
+            .four.wide.column.text-right
+              .bold Endereço: 
+            .four.wide.column.text-left
+              div Mauá - SP
+          .ui.grid.text-center
+            .four.wide.column.text-right
+              .bold Email: 
+            .four.wide.column.text-left
+              div douglaspinheiroti@gmail.com
+          .ui.grid.text-center
+            .four.wide.column.text-right
+              .bold Telefone: 
+            .four.wide.column.text-left
+              div +55 11 952850777 (tim)
+          .ui.one.column.grid
+            .row
+              a.ui.inverted.black.active.button.text-center(href='documents/douglas_curriculo.docx', download='douglas_curriculo.docx')
+                | Download curriculo
+      footer
+        #links
+          a(href='https://github.com/douglasPinheiro')
+            i.fa.fa-github
+          a(href='https://www.instagram.com/douglas.dacosta.58/')
+            i.fa.fa-instagram
+          a(href='https://twitter.com/douglascostadev')
+            i.fa.fa-twitter
+          a(href='https://www.facebook.com/douglas.dacosta.58')
+            i.fa.fa-facebook-official
+          a(href='https://br.linkedin.com/in/douglas-da-costa-pinheiro-22559855')
+            i.fa.fa-linkedin
+        #rights © 2015 Douglas da Costa Pinheiro. All rights reserved. Desenvolvedor
