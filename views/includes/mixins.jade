@@ -1,0 +1,25 @@
+mixin all-stars
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+
+mixin full-stars(quantity)
+  - var n = 0
+    while n < quantity
+      i.fa.fa-star= quantity
+
+mixin half-stars(quantity)
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+
+mixin empty-stars(quantity)
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star

@@ -1,0 +1,19 @@
+=grayscale-transition($transition)
+  -webkit-transition: -webkit-filter 1000ms $transition
+  -moz-transition: -webkit-filter 1000ms $transition
+  -o-transition: -webkit-filter 1000ms $transition
+  -ms-transition: -webkit-filter 1000ms $transition
+  transition: -webkit-filter 1000ms $transition
+
+=scroll-animation($duration)
+  -webkit-animation-name: moving
+  -webkit-animation-duration: $duration
+  -webkit-animation-iteration-count: infinite
+  animation-name: moving
+  animation-duration: $duration
+  animation-iteration-count: infinite
+
+=scroll-top($duration)
+  -webkit-transition: opacity .3s 0s, visibility 0s $duration
+  -moz-transition: opacity .3s 0s, visibility 0s $duration
+  transition: opacity .3s 0s, visibility 0s $duration

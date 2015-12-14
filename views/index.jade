@@ -1,5 +1,6 @@
 doctype html
 html
+  include ./includes/mixins.jade
   head
     title Douglas da Costa Pinheiro
     meta(charset='utf-8')
@@ -13,14 +14,14 @@ html
   body
     a.cd-top(href='#0') Top
     .parallax
-      header#block_1.block
+      header.block
         nav
           ul#nav
             li
               button#hire.ui.inverted.black.active.button Contato
         #scrollDown
           i.fa.fa-chevron-down
-      main#block_2.block
+      main.block
         section.ui.one.column.grid
           .row
             #resume.column.title Resumo
@@ -32,74 +33,21 @@ html
               p Trabalho com o desenvolvimento Web há mais ou menos 2 anos,
               p mas não se engane, embora não faça muito tempo, eu já aprendi muito.
         hr
+        
         section.ui.one.column.grid
           .row
             .column.title Habilidades
-          .row
-            .column.abilities
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-html5.png')
-                  .label-progress-bar HTML 5
-                #progressHtml.ui.blue.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-css3.png')
-                  .label-progress-bar CSS 3
-                #progressCss.ui.orange.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-js.png')
-                  .label-progress-bar JavaScript
-                #progressJS.ui.blue.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-jquery.jpg')
-                  .label-progress-bar Jquery
-                #progressJquery.ui.yellow.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-angular.png')
-                  .label-progress-bar AngularJS
-                #progressAngular.ui.orange.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/nodejs.png')
-                  .label-progress-bar Node JS
-                #progressNode.ui.orange.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-net.png')
-                  .label-progress-bar .NET
-                #progressDotNet.ui.green.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-ruby.png')
-                  .label-progress-bar Ruby on Rails
-                #progressRoR.ui.red.progress
-                  .bar
-                    .progress
-              .progress-container
-                .ability-content
-                  img.logo(src='images/logo-scrum.png')
-                  .label-progress-bar Scrum
-                #progressScrum.ui.green.progress
-                  .bar
-                    .progress
+          .ui.column.grid
+            .row
+              .two.wide.column
+              .six.wide.column.ability
+                .text.left HTML
+                .text.rigth
+                  +all-stars
+              .six.wide.column.ability
+                .text.left CSS
+                .text.rigth
+                  +full-stars(3)
         hr
         section.ui.one.column.grid
           .row

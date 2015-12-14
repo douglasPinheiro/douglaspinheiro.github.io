@@ -6,13 +6,13 @@ var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
  
 gulp.task('jade', function() {
-  gulp.src('./views/*.jade')
+  gulp.src('./views/index.jade')
     .pipe(jade())
     .pipe(gulp.dest('./'))
 });
  
 gulp.task('sass', function () {
-  gulp.src('./styles/sass/*.sass')
+  gulp.src('./styles/sass/main.sass')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('./styles/css'));

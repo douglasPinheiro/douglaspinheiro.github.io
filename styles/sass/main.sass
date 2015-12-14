@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand)
 
+@import mixins
+@import keyframes
+
 html
   height: 100%
   overflow: hidden
@@ -12,9 +15,8 @@ html
   height: 100%
   overflow-y: scroll
   overflow-x: hidden
-  font-family: Quicksand, sans-serif
 
-div, ul, #hire
+.parallax, div, ul, #hire
   font-family: Quicksand, sans-serif
 
 ul
@@ -43,100 +45,47 @@ hr
   top: 90%
   left: 50%
   cursor: pointer
-  -webkit-animation-name: moving
-  // Chrome, Safari, Opera
-  -webkit-animation-duration: 0.8s
-  // Chrome, Safari, Opera
-  -webkit-animation-iteration-count: infinite
-  // Chrome, Safari, Opera
-  animation-name: moving
-  animation-duration: 0.8s
-  animation-iteration-count: infinite
+  +scroll-animation(0.8s)
   > i
     font-size: 50px
     color: black
 
-// Animation
-// Chrome, Safari, Opera
-@-webkit-keyframes moving
-  0%
-    top: 90%
 
-  10%
-    top: 89.8%
-
-  20%
-    top: 89.6%
-
-  30%
-    top: 89.4%
-
-  40%
-    top: 89.2%
-
-  50%
-    top: 89%
-
-  60%
-    top: 89.2%
-
-  70%
-    top: 89.4%
-
-  80%
-    top: 89.6%
-
-  90%
-    top: 89.8%
-
-  100%
-    top: 90%
-
-
-// Standard syntax
-@keyframes moving
-  0%
-    top: 90%
-
-  10%
-    top: 89.8%
-
-  20%
-    top: 89.6%
-
-  30%
-    top: 89.4%
-
-  40%
-    top: 89.2%
-
-  50%
-    top: 89%
-
-  60%
-    top: 89.2%
-
-  70%
-    top: 89.4%
-
-  80%
-    top: 89.6%
-
-  90%
-    top: 89.8%
-
-  100%
-    top: 90%
-
-
-#block_1
-  background-image: url("../../images/background.jpg")
+header
+  background-image: url("../../images/background.jpg") !important
   transform: translateZ(-1px) scale(2)
   z-index: -1
 
-#block_2
-  background-color: white
-  min-height: 120vh
+main
+  background-color: white !important
+  min-height: 120vh !important
+
+nav
+  display: block
+  font: 12px 'opensans-bold', sans-serif
+  width: 100%
+  text-transform: uppercase
+  letter-spacing: 2.5px
+  margin: 0 auto
+  z-index: 100
+  position: fixed
+  left: 0
+  top: 0
+  > ul
+    list-style-type: none
+    display: flex
+    padding: 0
+    > li 
+      width: 25%
+      text-align: center
+      position: relative
+      list-style: none
+      line-height: 48px
+      display: inline-block
+      color: black
+      margin-left: auto
+      margin-right: 30px
+      text-align: right
 
 .title
   padding-top: 40px
@@ -156,34 +105,6 @@ hr
   margin-left: auto
   margin-right: auto
 
-nav
-  display: block
-  font: 12px 'opensans-bold', sans-serif
-  width: 100%
-  text-transform: uppercase
-  letter-spacing: 2.5px
-  margin: 0 auto
-  z-index: 100
-  position: fixed
-  left: 0
-  top: 0
-
-#nav
-  list-style-type: none
-  display: flex
-  padding: 0
-
-ul#nav li
-  width: 25%
-  text-align: center
-  position: relative
-  list-style: none
-  line-height: 48px
-  display: inline-block
-  color: black
-  margin-left: auto
-  margin-right: 30px
-  text-align: right
 
 .label-progress-bar
   text-align: initial
@@ -192,9 +113,13 @@ ul#nav li
   padding-top: 3px
   padding-left: 6px
 
-.ability-content
-  display: flex
+.ability
+  display: flex !important
   padding-bottom: 4px
+  > .text.rigth
+    margin-left: auto
+    > .fa
+      font-size: 18px
 
 .logo
   width: 27px
@@ -238,11 +163,7 @@ ul#nav li
     filter: grayscale(100%)
 
 .column:hover > a > .project-image-content > img
-  -webkit-transition: -webkit-filter 1000ms linear
-  -moz-transition: -webkit-filter 1000ms linear
-  -o-transition: -webkit-filter 1000ms linear
-  -ms-transition: -webkit-filter 1000ms linear
-  transition: -webkit-filter 1000ms linear
+  +grayscale-transition(linear)
   -webkit-filter: grayscale(0%)
   filter: grayscale(0%)
 
@@ -304,29 +225,21 @@ footer
   height: 30px
   width: 30px
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05)
-  // image replacement properties
   overflow: hidden
   text-indent: 100%
   white-space: nowrap
   background: rgba(0, 0, 0, 0.5) url(../../images/cd-top-arrow.svg) no-repeat center 50%
   visibility: hidden
   opacity: 0
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s
-  -moz-transition: opacity .3s 0s, visibility 0s .3s
-  transition: opacity .3s 0s, visibility 0s .3s
+  +scroll-top(.3s)
   &.cd-is-visible, &.cd-fade-out
-    -webkit-transition: opacity .3s 0s, visibility 0s 0s
-    -moz-transition: opacity .3s 0s, visibility 0s 0s
-    transition: opacity .3s 0s, visibility 0s 0s
+    +scroll-top(0s)
 
 .no-touch .cd-top:hover
-  -webkit-transition: opacity .3s 0s, visibility 0s 0s
-  -moz-transition: opacity .3s 0s, visibility 0s 0s
-  transition: opacity .3s 0s, visibility 0s 0s
+  +scroll-top(0s)
 
 .cd-top
   &.cd-is-visible
-    // the button becomes visible
     visibility: visible
     opacity: 1
   &:hover
