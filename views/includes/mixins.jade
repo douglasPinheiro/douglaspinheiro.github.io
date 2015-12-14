@@ -5,21 +5,37 @@ mixin all-stars
   i.fa.fa-star
   i.fa.fa-star
 
-mixin full-stars(quantity)
-  - var n = 0
-    while n < quantity
-      i.fa.fa-star= quantity
+mixin four-half-stars
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star-half-full
 
-mixin half-stars(quantity)
+mixin four-stars
   i.fa.fa-star
   i.fa.fa-star
   i.fa.fa-star
   i.fa.fa-star
-  i.fa.fa-star
+  i.fa.fa-star-o
 
-mixin empty-stars(quantity)
+mixin three-half-stars
   i.fa.fa-star
   i.fa.fa-star
   i.fa.fa-star
+  i.fa.fa-star-half-full
+  i.fa.fa-star-o
+
+mixin three-stars
   i.fa.fa-star
   i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star-o
+  i.fa.fa-star-o
+
+mixin two-stars
+  i.fa.fa-star
+  i.fa.fa-star
+  i.fa.fa-star-o
+  i.fa.fa-star-o
+  i.fa.fa-star-o

@@ -34,20 +34,8 @@ html
               p mas não se engane, embora não faça muito tempo, eu já aprendi muito.
         hr
         
-        section.ui.one.column.grid
-          .row
-            .column.title Habilidades
-          .ui.column.grid
-            .row
-              .two.wide.column
-              .six.wide.column.ability
-                .text.left HTML
-                .text.rigth
-                  +all-stars
-              .six.wide.column.ability
-                .text.left CSS
-                .text.rigth
-                  +full-stars(3)
+        include ./includes/abilities.jade
+        
         hr
         section.ui.one.column.grid
           .row

@@ -100,12 +100,6 @@ nav
   > p
     margin-bottom: 8px
 
-.abilities
-  width: 70% !important
-  margin-left: auto
-  margin-right: auto
-
-
 .label-progress-bar
   text-align: initial
   font-weight: 600
@@ -113,13 +107,35 @@ nav
   padding-top: 3px
   padding-left: 6px
 
+.abilities
+  > .row
+    padding-top: 0 !important
+    padding-bottom: 4px !important
+
+.ability-title
+  font-weight: 700
+  font-size: 22px
+  padding-bottom: 8px
+  padding-top: 5px
+  
 .ability
   display: flex !important
   padding-bottom: 4px
+  font-size: 17px
   > .text.rigth
     margin-left: auto
     > .fa
-      font-size: 18px
+      font-size: 20px
+      color: black
+      padding-bottom: 4px;
+      -webkit-transition: font-size 2s, color 2s, padding-bottom 2s, -webkit-transform 2s
+      transition: font-size 2s, color 2s, padding-bottom 2s, transform 2s
+  &:hover i.fa
+    font-size: 22px !important
+    color: red !important
+    padding-bottom: 0px !important
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)
 
 .logo
   width: 27px
