@@ -22,7 +22,7 @@ html
         #scrollDown
           i.fa.fa-chevron-down
       main.block
-        section.ui.one.column.grid
+        section.ui.one.column.grid.resume
           .row
             #resume.column.title Resumo
           .row
@@ -32,6 +32,10 @@ html
               p e metodologias ágeis (Scrum é minha preferida).
               p Trabalho com o desenvolvimento Web há mais ou menos 2 anos,
               p mas não se engane, embora não faça muito tempo, eu já aprendi muito.
+        .ui.one.column.grid.resume
+          .row
+            a.ui.inverted.black.active.button.text-center(href='documents/douglas_curriculo.docx', download='douglas_curriculo.docx')
+              | Download curriculo
         hr
         
         include ./includes/abilities.jade
@@ -100,7 +104,7 @@ html
               p.project-title Geoposicionamento
               p
                 | Na Geosiga eu participei de vários projetos, fiz incrementos no site, ajudei no desenvolvimento do sistema que cuida do back-office da empresa e trabalhei bastante no desenvolvimento de softwares que faziam o gerenciamento de dados de geolocalização, integrado com o google maps.
-        hr
+        hr.hr-portfolio
         section.contact
           .ui.one.column.grid
             .row
@@ -110,6 +114,11 @@ html
               .bold Nome: 
             .four.wide.column.text-left
               div Douglas da Costa Pinheiro
+          .ui.grid.text-center
+            .four.wide.column.text-right
+              .bold Idade: 
+            .four.wide.column.text-left
+              div 19 Anos
           .ui.grid.text-center
             .four.wide.column.text-right
               .bold Endereço: 
@@ -127,8 +136,8 @@ html
               div +55 11 952850777 (tim)
           .ui.one.column.grid
             .row
-              a.ui.inverted.black.active.button.text-center(href='documents/douglas_curriculo.docx', download='douglas_curriculo.docx')
-                | Download curriculo
+              form#send-email(method='post', action='mailto:douglaspinheiroti@gmail.com')
+                input.ui.inverted.black.active.button.text-center(type='submit', value='Mandar Email')
       footer
         #links
           a(href='https://github.com/douglasPinheiro')

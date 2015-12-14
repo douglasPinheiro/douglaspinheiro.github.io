@@ -41,7 +41,7 @@ function backToTop(){
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
 		$('.parallax').animate({
-			scrollTop: 0 ,
+			scrollTop: 0,
 	 	}, 1500);
 	});
 }
