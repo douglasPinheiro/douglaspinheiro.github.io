@@ -1,4 +1,4 @@
-$(function() {
+$(window).load(function() {
     $('#progressHtml').progress({value:90, total:100});
 	$('#progressCss').progress({value:80, total:100});
 	$('#progressJS').progress({value:90, total:100});
@@ -22,6 +22,10 @@ $(function() {
         }, 1500);
         return false;
 	});
+
+	setTimeout(function(){
+        $('body').toggleClass('loaded');
+    }, 3000);
 
 	backToTop();
 });
