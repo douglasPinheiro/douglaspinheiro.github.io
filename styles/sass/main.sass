@@ -167,6 +167,12 @@ nav
   img
     width: 100%
     height: 160px
+    -webkit-filter: grayscale(100%)
+    filter: grayscale(100%)
+  .education-item:hover a img
+    +grayscale-transition(linear)
+    -webkit-filter: grayscale(0%)
+    filter: grayscale(0%)
   >
     .row > .column > .column
       text-align: justify
