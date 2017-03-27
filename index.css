@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+/* Toggle Styles */
+
+#header-wrapper {
+   z-index: 1000;
+   position: fixed;
+   width: 0;
+   height: 100%;
+   overflow-y: auto;
+   background: #1A1717;
+   -webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -o-transition: all 0.5s ease;
+   transition: all 0.5s ease;
+}
+
+#navbar-wrapper {
+  position: fixed;
+  left: 0;
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+   width: 100%;
+   position: absolute;
+   padding: 15px;
+}
+
+#header-wrapper.toggled #page-content-wrapper {
+   position: absolute;
+   margin-right: -150px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+   position: absolute;
+   top: 0;
+   width: 150px;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.sidebar-nav li {
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+.sidebar-nav .sidebar-image img {
+  width: 130px;
+  height: 130px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sidebar-nav li a:hover {
+   text-decoration: none;
+   color: #fff;
+   background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+   text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+   height: 65px;
+   font-size: 18px;
+   line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+   color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+   color: #fff;
+   background: none;
+}
+
+@media(min-width:768px) {
+   #header-wrapper {
+       padding-left: 150px;
+   }
+
+   #header-wrapper.toggled {
+       padding-left: 0;
+   }
+
+   #navbar-wrapper {
+       width: 150px;
+   }
+
+   #header-wrapper.toggled #navbar-wrapper {
+       width: 0;
+   }
+
+   #page-content-wrapper {
+       padding: 20px;
+       position: relative;
+   }
+
+   #header-wrapper.toggled #page-content-wrapper {
+       position: relative;
+       margin-right: 0;
+   }
+}
+
+/* Social medias */
+.social-medias-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+}
+
+.social-medias-wrapper > .first-row,
+.social-medias-wrapper > .second-row {
+  width: inherit;
+  display: flex;
+}
+
+.social-media-item {
+  width: 40px;
+  text-align: center;
+  font-size: 27px;
+  color: white;
+  margin-left: 7px;
+}
+
+/* Home */
+#home {
+    background-image: url("code-1839406_1920.jpg");
+    height: 100%;
+    margin-left: 150px;
+}
